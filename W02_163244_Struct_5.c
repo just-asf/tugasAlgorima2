@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-struct Student
+typedef struct
 {
     char name[50];
     char major[35];
     float gpa;
-};
+} Student;
 
 int main()
 {
-    struct Student waldo = {"Waldo", "Informatika", 3.98};
+    Student waldo = {"Waldo", "Informatika", 3.98};
 
     printf("Name    : %s\n", waldo.name);
     printf("Major   : %s\n", waldo.major);
